@@ -205,7 +205,7 @@ begin
   RunHidden(Exe, '--option enable-file-transfer Y');
   { Ungetestet: ob sich das Verbindungsfenster so verstecken lässt, ist unklar.
     Diese Option gehört normalerweise zum kostenpflichtigen Custom Client Generator. }
-  RunHidden(Exe, '--option allow-hide-cm Y');
+  RunHidden(Exe, '--option allow-hide-cm N');
 
   { 3. Dienst neu starten, damit die Konfiguration greift }
   RunHidden(ExpandConstant('{sys}\net.exe'), 'stop RustDesk');
